@@ -1,0 +1,106 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+.modalContent h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.modalInput,
+.modalTextarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.modalInput:focus,
+.modalTextarea:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+.modalTextarea {
+  height: 100px;
+  resize: none;
+}
+
+.modalSelect {
+  margin-bottom: 10px;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modalBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.primaryBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+.primaryBtn:hover {
+  background-color: #0056b3;
+}
+
+.cancelBtn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancelBtn:hover {
+  background-color: #5a6268;
+}
+
+.deleteBtn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.deleteBtn:hover {
+  background-color: #e60000;
+}
